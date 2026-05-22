@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.proiect.controller.LoginController" prefWidth="400" prefHeight="600" stylesheets="@style.css">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Spital General" styleClass="titlu-brand" />
+
+    <TextField fx:id="campIdLogin" promptText="Introduceti ID-ul (ex: 1)" maxWidth="200"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Intră ca Pacient" onAction="#actiuneLoginPacient"/>
+        <Button text="Intră ca Doctor" onAction="#actiuneLoginDoctor"/>
+    </HBox>
+
+    <Label fx:id="etichetaEroare" textFill="red"/>
+
+    <Separator/>
+
+    <Button text="Nu ai cont? Creează unul nou" onAction="#arataFormularInregistrare"/>
+
+    <VBox fx:id="sectiuneInregistrare" spacing="10.0" visible="false" managed="false" alignment="CENTER">
+        <Label text="Creare Cont Pacient Nou" />
+
+        <TextField fx:id="campCnp" promptText="CNP (13 cifre)"/>
+        <TextField fx:id="campNume" promptText="Nume"/>
+        <TextField fx:id="campPrenume" promptText="Prenume"/>
+        <DatePicker fx:id="campDataNasterii" promptText="Data Nașterii" prefWidth="400"/>
+        <TextField fx:id="campTelefon" promptText="Telefon"/>
+
+        <TextField fx:id="campNumeTutore" promptText="Nume Tutore (doar pt minori)"/>
+        <TextField fx:id="campTelefonTutore" promptText="Telefon Tutore (doar pt minori)"/>
+
+        <Label text="Alege Tipul de Abonament:"/>
+        <ComboBox fx:id="comboAbonament" promptText="Selectează..."/>
+
+        <Button text="Înregistrare și Plată" onAction="#actiuneInregistrare"/>
+    </VBox>
+</VBox>

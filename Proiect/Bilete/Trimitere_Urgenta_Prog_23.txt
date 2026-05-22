@@ -1,0 +1,7 @@
+=== BILET TRIMITERE URGENTA LA SPITAL ===
+Data: 20.05.2026 10:14
+Pacient: Popescu Marcel
+-----------------------------------------
+Diagnostic constatat: test
+Observatii medic: ceva
+=========================================

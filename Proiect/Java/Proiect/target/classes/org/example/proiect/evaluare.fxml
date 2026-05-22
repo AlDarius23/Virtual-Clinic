@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.proiect.controller.EvaluareController"
+      stylesheets="@style.css" spacing="15" style="-fx-padding: 30; -fx-alignment: center;">
+
+    <Label text="Evaluare Simptome" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #1e293b;"/>
+    <Label text="Selectați simptomele și descrieți cum vă simțiți:" style="-fx-text-fill: #475569;"/>
+
+    <VBox spacing="10">
+        <Label text="Simptom 1 (Obligatoriu):" style="-fx-font-weight: bold;"/>
+        <ComboBox fx:id="comboSimptom1" promptText="Alegeți simptomul..." maxWidth="Infinity"/>
+
+        <Label text="Simptom 2 (Opțional):" style="-fx-font-weight: bold;"/>
+        <ComboBox fx:id="comboSimptom2" promptText="Alegeți simptomul..." maxWidth="Infinity"/>
+
+        <Label text="Simptom 3 (Opțional):" style="-fx-font-weight: bold;"/>
+        <ComboBox fx:id="comboSimptom3" promptText="Alegeți simptomul..." maxWidth="Infinity"/>
+
+        <Label text="Descrieți în detaliu ce simțiți (Opțional):" style="-fx-font-weight: bold;"/>
+        <TextArea fx:id="campDescriere" promptText="Scrieți aici detalii despre starea dumneavoastră..." prefRowCount="3" wrapText="true"/>
+    </VBox>
+
+    <HBox alignment="CENTER" spacing="15" style="-fx-padding: 20 0 0 0;">
+        <Button text="Trimite Evaluarea" onAction="#trimiteEvaluare" style="-fx-background-color: #2563eb; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20;"/>
+        <Button text="Anulare" onAction="#inchideFereastra" style="-fx-background-color: #94a3b8; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20;"/>
+    </HBox>
+</VBox>

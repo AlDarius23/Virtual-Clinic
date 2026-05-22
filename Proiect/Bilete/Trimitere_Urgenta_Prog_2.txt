@@ -1,0 +1,7 @@
+=== BILET TRIMITERE URGENTA LA SPITAL ===
+Data: 16.05.2026 15:21
+Pacient: Ionescu Mihai
+-----------------------------------------
+Diagnostic constatat: ss
+Observatii medic: ss
+=========================================
